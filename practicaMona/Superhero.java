@@ -2,15 +2,15 @@ package practicaMona;
 
 public class Superhero extends Mona{
   private String nameHero, organization,realName;
-  private String[] habilities;
+  private String[] abilities;
 
 
-  public Superhero(int id, String name, String job, String nameHero, String organization, String realName, String[] habilities){
+  public Superhero(int id, String name, String job, String nameHero, String organization, String realName, String[] abilities){
     super(id,name,job);
     this.nameHero = nameHero;
     this.organization = organization;
     this.realName = realName;
-    this.habilities = habilities;
+    this.abilities = abilities;
   }
 
   public String getNameHero() {
@@ -26,7 +26,7 @@ public class Superhero extends Mona{
   }
 
   public String[] getHabilities() {
-    return habilities;
+    return abilities;
   }
 
   public boolean setNameHero(String nameHero) {
@@ -47,17 +47,17 @@ public class Superhero extends Mona{
     return true;
   }
 
-  public boolean setHabilities(String[] habilities) {
-    if(habilities.length < 1) return false;
-    this.habilities = habilities;
+  public boolean setHabilities(String[] abilities) {
+    if(abilities.length < 1) return false;
+    this.abilities = abilities;
     return true;
   }
 
   private String habilityString(){
     String message = "";
-    if(this.habilities.length > 0) {
-      message += " and my habilities are: ";
-      for(String hability : this.habilities){ message += hability+" ";}
+    if(this.abilities.length > 0) {
+      message += " and my abilities are: ";
+      for(String hability : this.abilities){ message += hability+" ";}
     }
     return message;
   }
