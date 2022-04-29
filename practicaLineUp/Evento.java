@@ -19,7 +19,7 @@ public class Evento implements Runnable{
 
   public void run(){
     /*for(int i=0;i<artists.length;i++){*/
-      Runnable artist = artists[(int) Math.round(Math.random() * this.artists.length)];
+      Runnable artist = artists[(int) Math.round(Math.random() * (this.artists.length - 1))];
       Thread artistThread = new Thread(artist);
       artistThread.run();
    /* }*/
