@@ -1,4 +1,4 @@
-package Excercises;
+package exercises;
 
 public class Logical {
 	public static void triangle(int numMax) /* throws ExceptionLong */{

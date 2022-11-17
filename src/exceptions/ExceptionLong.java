@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 public class ExceptionLong extends Exception{
 	public ExceptionLong() {}
